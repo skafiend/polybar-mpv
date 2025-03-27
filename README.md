@@ -1,4 +1,4 @@
-![alt text](https://imgur.com/hnJo4e4)
+![no_image](https://github.com/skafiend/polybar-mpv/blob/main/image.png)
 
 - Before using the script make sure the file is executable and put the file to `~/.config/polybar/mpv.sh`:
 ```
