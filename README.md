@@ -2,7 +2,7 @@
 ```
 chmod +x mpv.sh
 ```
-- create a wrapper script to lauch mpv
+- create a wrapper script to lauch mpv with a custom title to avoid triggering the module if you play videos, etc..
 ```
 #!/bin/bash
 if ! pgrep -f mpv_audiobook > /dev/null; then
