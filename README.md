@@ -23,3 +23,4 @@ else
     pkill -f mpv_audiobook
 fi
 ```
+- In case you want to play around with colors https://github.com/polybar/polybar/wiki/Formatting#foreground-color-f
