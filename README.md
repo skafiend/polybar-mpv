@@ -1,6 +1,6 @@
 ![no_image](https://github.com/skafiend/polybar-mpv/blob/main/image.png)
 
-- Before using the script make sure the file is executable and put the file to `~/.config/polybar/mpv.sh`:
+- Before using the script make it executable and put the file to `~/.config/polybar/mpv.sh`:
 ```
 chmod +x mpv.sh
 ```
