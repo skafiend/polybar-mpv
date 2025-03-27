@@ -1,6 +1,6 @@
 #!/bin/bash
 _print_time() {
-    printf '%s%d:%02d:%02d' "$1" "$2" "$3" "$4" 
+    printf '%s%02d:%02d:%02d' "$1" "$2" "$3" "$4" 
 }
 # mpv --title="mpv_audiobook" --input-ipc-server=/tmp/mpvsocket --save-position-on-quit -no-video "$(cat ~/.config/mpv/curbook.tmp)" &
 if pgrep -f "mpv_audiobook" > /dev/null; then
