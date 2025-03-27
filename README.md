@@ -1,4 +1,4 @@
-![alt text]([http://url/to/img.png](https://imgur.com/a/rySBJvQ)
+![alt text]([http://url/to/img.png](https://imgur.com/a/rySBJvQ))
 - Before using the script make sure the file is executable and put the file to `~/.config/polybar/mpv.sh`:
 ```
 chmod +x mpv.sh
