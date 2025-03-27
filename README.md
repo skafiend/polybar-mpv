@@ -7,8 +7,7 @@ chmod +x mpv.sh
 #!/bin/bash
 if ! pgrep -f mpv_audiobook > /dev/null; then
     mpv --title="mpv_audiobook" --input-ipc-server=/tmp/mpvsocket --save-position-on-quit -no-video "$(cat ~/.config/mpv/curbook.tmp)" &
-	pkill cmus
 else
-	pkill -f mpv_audiobook
+    pkill -f mpv_audiobook
 fi
 ```
