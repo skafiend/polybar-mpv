@@ -15,10 +15,10 @@ if pgrep -f "mpv_audiobook" > /dev/null; then
     ERROR=$(</tmp/mpv_book_error)
     if [ -z $ERROR ]; then 
         _print_time "%{F#fff}" $((position/3600)) $((position%3600/60)) $((position%60)) %{F-}
-        echo -n "%{F$PRIMARY_COLOR} " 
+        echo -n "%{F#f00} " 
         printf '%s' "$metadata"
         _print_time "%{F#fff} " $((remaining/3600)) $((remaining%3600/60)) $((remaining%60)) 
-        echo -n " %{F$PRIMARY_COLOR}|%{F-}" 
+        echo -n " %{F#f00}|%{F-}" 
     else 
         echo ""
     fi
