@@ -6,7 +6,12 @@ chmod +x mpv.sh
 ```
 - Create a new module in '~/.config/polybar/config.ini'
 ```
-
+[module/mpv-polybar]
+type = custom/script
+exec = ~/.config/polybar/mpv.sh
+interval = 1
+click-left = echo 'cycle pause' | socat - /tmp/mpvsocket
+click-right = echo 'quit' | socat - /tmp/mpvsocket
 ```
 
 - create a wrapper script to launch mpv with a custom title to avoid triggering the module if you play videos, etc..
