@@ -1,4 +1,4 @@
-![no_image](https://github.com/skafiend/polybar-mpv/blob/main/image.png)
+![no_image](https://github.com/skafiend/polybar-mpv/blob/main/example.png)
 
 - Before using the script make it executable and put the file to `~/.config/polybar/`:
 ```
