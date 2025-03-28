@@ -10,16 +10,16 @@ SOCK='/tmp/mpvsocket'
     remaining=$(echo '{ "command": ["get_property_string", "duration"] }' | socat - $SOCK | jq -r .data | cut -d'.' -f 1) 
     ERROR=$(</tmp/mpv_book_error)
     if [ -z $ERROR ]; then 
-        echo -n "%{F$PRIMARY_COLOR} " 
+        echo -n "%{F#f00} " 
         if [ ${#metadata} -gt 55 ]; then
             printf '%.55s' "$metadata..."
         else
             printf "$metadata"
         fi
         _print_time "%{F#fff}" $((position/3600)) $((position%3600/60)) $((position%60)) %{F-}
-        echo -n " %{F$PRIMARY_COLOR}/%{F-}"
+        echo -n " %{F#f00}/%{F-}"
         _print_time "" $((remaining/3600)) $((remaining%3600/60)) $((remaining%60))
-        echo -n " %{F$PRIMARY_COLOR}|"
+        echo -n " %{F#f00}|"
     else 
         echo ""
     fi
