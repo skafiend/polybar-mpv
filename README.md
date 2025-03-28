@@ -12,7 +12,7 @@ chmod +x mpv.sh
 [module/mpv]
 type = custom/script
 exec = ~/.config/polybar/mpv.sh
-exec-if = pgrep -x mpv_audiobook
+exec-if = pgrep -f mpv_audiobook
 tail = true
 interval = 1
 click-left = echo 'cycle pause' | socat - /tmp/mpvsocket
