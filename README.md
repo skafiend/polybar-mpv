@@ -1,5 +1,8 @@
 ![no_image](https://github.com/skafiend/polybar-mpv/blob/main/example.png)
 
+It's a slightly edited version of the script from https://www.reddit.com/r/Polybar/comments/cqj7jt/couldnt_find_much_on_a_module_for_mpv_so_i_made/
+I just added colors and errors handling.
+
 - Before using the script make it executable and put the file to `~/.config/polybar/`:
 ```
 chmod +x mpv.sh
